@@ -81,3 +81,47 @@ npm start
 | PUT    | `/api/tasks/:id`  | Update a task by ID (auth required) |
 | DELETE | `/api/tasks/:id`  | Delete a task by ID (auth required) |
 
+## How to Use
+
+### Register a User
+Send a `POST` request to `/api/register` with the following fields in the request body:
+- `username`
+- `email`
+- `password`
+
+### Log In
+Send a `POST` request to `/api/login` with the following fields in the request body:
+- `email`
+- `password`
+
+Upon success, a cookie will be set for authentication.
+
+---
+
+### Manage Tasks
+
+#### Create a Task
+Send a `POST` request to `/api/tasks/new` with the following fields in the request body:
+- `title`
+- `description`
+
+**Note**: Authentication is required.
+
+#### View All Tasks
+Send a `GET` request to `/api/tasks/all`.
+
+**Note**: Authentication is required.
+
+#### Update a Task
+Send a `PUT` request to `/api/tasks/:id` with any of the following optional fields in the request body:
+- `title`
+- `description`
+- `isCompleted`
+
+**Note**: Replace `:id` with the task's ID. Authentication is required.
+
+#### Delete a Task
+Send a `DELETE` request to `/api/tasks/:id`.
+
+**Note**: Replace `:id` with the task's ID. Authentication is required.
+
