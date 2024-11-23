@@ -54,6 +54,7 @@ MONGO_URI=your_mongodb_connection_string
 
 # JWT Secret for Authentication
 JWT_SECRET=your_jwt_secret
+```
 
 ## Starting the Application
 
