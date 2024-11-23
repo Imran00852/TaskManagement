@@ -62,3 +62,22 @@ To start the application, run the following command:
 
 ```bash
 npm start
+```
+## API Endpoints
+
+### User Routes
+
+| Method | Endpoint        | Description             |
+|--------|-----------------|-------------------------|
+| POST   | `/api/register` | Register a new user     |
+| POST   | `/api/login`    | Log in an existing user |
+
+### Task Routes
+
+| Method | Endpoint          | Description                        |
+|--------|-------------------|------------------------------------|
+| POST   | `/api/tasks/new`  | Create a new task (auth required) |
+| GET    | `/api/tasks/all`  | Get all tasks for a user (auth required) |
+| PUT    | `/api/tasks/:id`  | Update a task by ID (auth required) |
+| DELETE | `/api/tasks/:id`  | Delete a task by ID (auth required) |
+
