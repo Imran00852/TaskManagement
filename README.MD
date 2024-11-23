@@ -35,3 +35,29 @@ A simple Node.js application that allows users to manage tasks. Users can regist
    ```bash
    git clone https://github.com/your-username/task-management-app.git
    cd task-management-app
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+
+## .env Configuration
+
+Create a `.env` file in the root directory of the project and add the following variables:
+
+```env
+# Server Port
+PORT=5000
+
+# MongoDB Connection URI
+MONGO_URI=your_mongodb_connection_string
+
+# JWT Secret for Authentication
+JWT_SECRET=your_jwt_secret
+
+## Starting the Application
+
+To start the application, run the following command:
+
+```bash
+npm start
